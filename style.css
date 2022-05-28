@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Syne Tactile";
+  color: white;
+  font-size: 30px;
+  overflow: hidden;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#pagination > label {
+  height: 30px;
+  width: 30px;
+  display: inline-flex;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+.label {
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid white;
+}
+
+.label:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.label-dark {
+  color: black;
+  border: 1px solid black;
+}
+
+.label-dark:hover {
+  border: 3px solid black;
+}
+
+.sel {
+  box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#pagination {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#pages {
+  height: 100vh;
+  width: 1000vw;
+  display: flex;
+}
+
+#pages > div {
+  flex: 0 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s ease-in-out;
+}
+
+#inp-1:checked ~ #page-1 {
+  margin-left: 0;
+}
+#inp-2:checked ~ #page-1 {
+  margin-left: -10%;
+}
+#inp-3:checked ~ #page-1 {
+  margin-left: -20%;
+}
+#inp-4:checked ~ #page-1 {
+  margin-left: -30%;
+}
+#inp-5:checked ~ #page-1 {
+  margin-left: -40%;
+}
+#inp-6:checked ~ #page-1 {
+  margin-left: -50%;
+}
+#inp-7:checked ~ #page-1 {
+  margin-left: -60%;
+}
+#inp-8:checked ~ #page-1 {
+  margin-left: -70%;
+}
+#inp-9:checked ~ #page-1 {
+  margin-left: -80%;
+}
+#inp-10:checked ~ #page-1 {
+  margin-left: -90%;
+}
+
+#page-1 {
+  background-color: navy;
+}
+
+#page-2 {
+  background-color: skyblue;
+}
+#page-3 {
+  background-color: orangered;
+}
+#page-4 {
+  background-color: green;
+}
+#page-5 {
+  background-color: yellow;
+}
+#page-6 {
+  background-color: darkorchid;
+}
+#page-7 {
+  background-color: red;
+}
+#page-8 {
+  background-color: brown;
+}
+#page-9 {
+  background-color: pink;
+}
+#page-10 {
+  background-color: yellowgreen;
+}
+
+@media (max-width: 900px) {
+  #pagination > label {
+    height: 25px;
+    width: 25px;
+    display: inline-flex;
+    border-radius: 50%;
+    border: 1px solid;
+    margin: 4px;
+  }
+}
+
+@media (max-width: 800px) {
+  #pagination > label {
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    border-radius: 50%;
+    border: 1px solid;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 620px) {
+  #pagination > label {
+    height: 15px;
+    width: 15px;
+    display: inline-flex;
+    border-radius: 50%;
+    border: 1px solid;
+    margin: 1px;
+  }
+}
+
+@media (max-width: 500px) {
+  #pagination > label {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid;
+    margin: 4px;
+  }
+}
+
+@media (max-width: 350px) {
+  #pagination {
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+    transform: translateX(0%);
+  }
+
+  #pagination > label {
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    border-radius: 50%;
+    border: 1px solid;
+    margin: 4px;
+  }
+}
